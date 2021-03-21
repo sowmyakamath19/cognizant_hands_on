@@ -3,15 +3,16 @@ import java.util.Scanner;
 public class CubeDemo {
 
 	public static void main(String[] args) {
-		cubeSum(123);
+		System.out.println("Enter the number:");
+		Scanner s=new Scanner(System.in);
+		int num=s.nextInt();
+		cubeSum(num);
 
 	}
 
 	private static void cubeSum(int num) {
 		int digit,sum=0;
-		System.out.println("Enter the number:");
-		Scanner s=new Scanner(System.in);
-		num=s.nextInt();
+		
 		while(num!=0) {
 			digit=num%10;
 			sum=sum+digit*digit*digit;
